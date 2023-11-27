@@ -1,0 +1,19 @@
+.drawer-nav {
+    width: 40vw;
+    padding: 2rem 1rem;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: var(--grey);
+    font-weight: 600;
+}
+
+.drawer-nav li {
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.drawer-nav li:hover {
+    color: var(--darkgrey);
+}

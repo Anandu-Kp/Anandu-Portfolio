@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import Footer from "./Components/Common/Footer";
+import NavBar from "./Components/Common/NavBar";
+import Home from "./Components/Home";
+import About from "./Components/about";
+import Projects from "./Sections/Projects";
+import Skills from "./Sections/skills";
+
 
 function App() {
+
+  let handleSections = (value) => {
+    let ele = document.getElementById(value);
+    console.log(ele);
+    window.scrollTo({ top: ele.offsetTop - 95, behavior: "smooth" })
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <NavBar handleSections={handleSections} />
+      <Home />
+      <About />
+      <Skills />
+      <Projects />
+
+      <Footer />
+
+
     </div>
   );
 }
