@@ -9,9 +9,6 @@ import github from "../../../Assets/github-logo.png"
 
 function Footer() {
 
-
-
-
     return (
         <div className='footer' id='socials'>
             <div className='footer-header'>
