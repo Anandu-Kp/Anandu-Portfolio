@@ -32,6 +32,6 @@ body {
 }
 
 .css-uhb5lp {
-  width: 90vw;
-  max-width: none;
+  width: 90vw !important;
+  max-width: none !important;
 }
