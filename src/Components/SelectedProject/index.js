@@ -30,7 +30,7 @@ function ProjectDetails(props) {
                 </div>
                 <div style={{ display: "flex", flexDirection: 'column', borderRadius: 0 }}>
                     <div className="iframeDiv">
-                        <iframe style={{ width: "100%", height: "100vh" }} allowFullScreen src={project.deployed} className="iframeFrame" />
+                        <iframe style={{ width: "100%", height: "75vh" }} allowFullScreen src={project.deployed} className="iframeFrame" />
                     </div>
                     <div className="instaTag" style={{ padding: 20, fontSize: "80%" }}>
                         <div style={{ display: "flex", flexDirection: "row", justifyContent: "start", alignItems: "center" }}>
