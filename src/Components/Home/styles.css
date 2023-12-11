@@ -1,6 +1,7 @@
 .home {
     padding-top: 10rem;
     padding-bottom: 7rem;
+    margin-bottom: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;

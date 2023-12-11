@@ -1,7 +1,8 @@
 .about-container {
     display: flex;
     justify-content: space-between;
-    padding: 5rem 4rem;
+    padding: 7rem 4rem;
+    margin-top: 0rem;
     margin-bottom: 4rem;
     transition: all .5s;
 }

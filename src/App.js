@@ -11,7 +11,7 @@ function App() {
   let handleSections = (value) => {
     let ele = document.getElementById(value);
     console.log(ele);
-    window.scrollTo({ top: ele.offsetTop - 95, behavior: "smooth" })
+    window.scrollTo({ top: ele.offsetTop - 110, behavior: "smooth" })
   }
   return (
     <div className="App">
