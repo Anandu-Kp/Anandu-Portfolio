@@ -10,7 +10,11 @@ function ProjectDetails(props) {
     const handleClose = () => {
         onClose();
     };
-
+const handleFullscreen= () => {
+    let link = document.createElement("a");
+    link.href=project.deployed;
+    link.click();
+}
 
 
     return (
@@ -24,7 +28,7 @@ function ProjectDetails(props) {
                     <div style={{ display: "flex", justifyContent: "start", alignItems: "center" }}>
                         <h1 onClick={handleClose} style={{ zIndex: 50, marginTop: 30, cursor: "pointer" }}><strong style={{ color: "#FE5E58" }}> .</strong></h1>
                         <h1 style={{ marginTop: 30 }}><strong style={{ color: "#FEBD2C" }}>.</strong></h1>
-                        <h1 style={{ marginTop: 30 }}><strong style={{ color: "rgb(2, 141, 2)" }}>.</strong></h1>
+                        <h1 onClick={handleFullscreen} style={{ marginTop: 30,cursor: "pointer" }}><strong style={{ color: "rgb(2, 141, 2)" }}>.</strong></h1>
                     </div>
 
                 </div>
